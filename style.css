@@ -1,4 +1,191 @@
-h1{
-    text-align: center;
-    margin: 5%;
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    h1{
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        }
+        p{
+        font-family: "Offside", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        h2{
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        }
 }
+html{
+    scroll-behavior: smooth;
+}
+/* nav-bar */
+nav{
+    display: flex;
+    height: 100px;
+    padding: 1.5%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.473);
+    background-image: linear-gradient(to left,rgba(0, 128, 0, 0.51), white);
+}
+nav img{
+    width: 130px;
+    margin-top: 2%;
+    margin-left: 5%; 
+    }
+    .navigation {
+        p{
+            text-align: right;
+            font-size: 20px;
+            padding-right: 5%;
+            background-color: aliceblue;
+        }
+    }
+    /* hero-section */
+    .hero-section{
+        height: 500px;
+        background-size: cover;
+        border-bottom: 1px solid black;
+        
+        .hero-text{
+            width: 80%;
+            margin-left: 5%;
+            margin-top: -20%;
+            h1{
+                padding-bottom: 1%;
+            }
+            h2{
+                padding-bottom: 5%;
+            }
+            p{
+                width: 50%;
+            }
+            .text{
+                margin-top: 2%;
+                width: 50%;
+            }
+        }
+        .image-box{
+            width: 50%;
+            margin-left: 50%;
+            height: 400px;
+        .image{
+            background-size: cover;
+            width: 50%;
+            margin-left: 35%;
+            margin-top: 8%;
+            height: 100%;
+        }
+        } 
+    }
+    /* about sustainable energy */
+    .about{
+        height: 550px;
+        margin-bottom: 2%;
+    }
+    .energy{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+    .sustainable{
+        h2{
+            text-align: center;
+            margin-bottom: 5%;
+        }
+        p{
+            backdrop-filter: blur(5px);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.667);
+            padding: 5%;
+            border-radius: 10px;
+        }
+    }
+    /* solar-eneegy */
+    .solar-energy{
+         border-top: 1px solid black;
+         margin-bottom: 17%;
+    }
+    .img{
+             width: 70%;
+            margin-left: 30%;
+            height: 450px;  
+    }
+    .img1{
+         background-size: cover;
+            width: 55%;
+            margin-left: 35%;
+            margin-top: 8%;
+            height: 100%;
+    }
+    .text1{
+        width: 80%;
+        margin-left: 5%;
+        margin-top: -19%;
+        .text-in{
+            width: 50%;
+            h2{
+                padding-bottom: 2%;
+            }
+        }
+    }
+    /* wind */
+    .wind-energy{
+        border-top: 1px solid black; 
+        margin-bottom: 17%;
+    }
+    .img2{
+            width: 70%;
+            height: 450px;  
+    }
+    .img-2{
+            background-size: cover;
+            width: 55%;
+            margin-left: 5%;
+            margin-top: 8%;
+            height: 100%;
+
+    }
+    .text2{
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -19%;
+    }
+    .text-in2{
+        width: 80%;
+        h2{
+            padding-bottom: 2%;
+        }
+    }
+    /* hydropower */
+    .hydro{
+         border-top: 1px solid black; 
+    }
+
+    .img3{
+            width: 70%;
+            margin-left: 30%;
+            height: 550px;  
+
+    }
+    .img-3{
+             background-size: cover;
+            width: 57%;
+            margin-left: 35%;
+            margin-top: 1%;
+            height: 100%;
+    }
+    .text3{
+        width: 80%;
+        margin-left: 5%;
+        margin-top: -19%;
+    }
+    .text-in3{
+         width: 50%;
+            h2{
+                padding-bottom: 2%;
+            }
+    }
