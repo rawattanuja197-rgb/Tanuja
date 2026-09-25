@@ -20,31 +20,63 @@
         font-style: normal;
         font-size: 35px;
         }
+        h3{
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;  
+        }
 }
+a:link{color:black;text-decoration:none;}
+a:visited{color:black;}
 html{
     scroll-behavior: smooth;
 }
-/* nav-bar */
+/* NAVIGATION */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 nav{
-    display: flex;
     height: 100px;
     padding: 1.5%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.473);
     background-image: linear-gradient(to left,rgba(0, 128, 0, 0.51), white);
+    display: flex;
+    justify-content: space-between;
 }
+/* logo */
 nav img{
-    width: 130px;
+   width: 130px;
     margin-top: 2%;
     margin-left: 5%; 
+}
+/* navigation-links */
+.nav-links{
+    flex: 1;
+    text-align:right;
+    i{
+        display: none;
     }
-    .navigation {
-        p{
-            text-align: right;
-            font-size: 20px;
-            padding-right: 5%;
-            background-color: aliceblue;
-        }
-    }
+
+}
+.nav-link{
+    display: none;
+}
+.nav-links ul li{
+    list-style: none; 
+    position: relative;
+    display: inline-block;
+    padding: 20px 10px; 
+    transition: 0.3s;  
+    z-index: 1200;
+    color: black;
+}
+.nav-links ul a:hover{
+    color: rgba(8, 95, 8, 0.83);
+    transition: 0.2s;
+}
     /* hero-section */
     .hero-section{
         height: 500px;
@@ -55,11 +87,11 @@ nav img{
             width: 80%;
             margin-left: 5%;
             margin-top: -20%;
-            h1{
-                padding-bottom: 1%;
-            }
             h2{
-                padding-bottom: 5%;
+                margin-bottom: 3%;
+                font-size: 30px;
+                font-weight: 400;
+                width: 70%;
             }
             p{
                 width: 50%;
@@ -75,7 +107,7 @@ nav img{
             height: 400px;
         .image{
             background-size: cover;
-            width: 50%;
+            width: 52%;
             margin-left: 35%;
             margin-top: 8%;
             height: 100%;
@@ -104,6 +136,45 @@ nav img{
             border-radius: 10px;
         }
     }
+     button{
+            padding: 10px;
+            font-weight: 500;
+            font-size: 15px;
+            width: 10%;
+            border-radius: 8px;
+            margin-left: 45%;
+            margin-top: 2%;
+            background-color: white;
+            border: 1px solid black inset;
+            transition: 0.2s;
+        }
+    button:hover{
+        background-color: rgb(63, 155, 63);
+        color: white;
+        border: 1px solid rgb(63, 155, 63);
+        box-shadow: 5px 5px 0px green;
+    }
+        .renew{
+            width: 80%;
+            margin-left: 10%;
+            border: 1px solid black;
+            padding: 2%;
+            padding-top: 4%;
+            height: auto;
+            margin-bottom: 2%;
+            border-radius: 2px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
+            
+        }
+        .energyy{
+            text-align: center;
+            h2{
+                margin-bottom: 5%;
+            }
+             button{
+                margin-bottom: 5%;
+            }
+        }       
     /* solar-eneegy */
     .solar-energy{
          border-top: 1px solid black;
@@ -163,6 +234,7 @@ nav img{
     /* hydropower */
     .hydro{
          border-top: 1px solid black; 
+         margin-bottom: 17%;
     }
 
     .img3{
@@ -188,4 +260,833 @@ nav img{
             h2{
                 padding-bottom: 2%;
             }
+    }
+    /* Biomass */
+     .biomass{
+        border-top: 1px solid black; 
+        border-bottom: 1px solid black; 
+        padding-bottom: 17%;
+        /* margin-bottom: 17%; */
+    }
+    .img4{
+            width: 70%;
+            height: 450px;  
+    }
+    .img-4{
+            background-size: cover;
+            width: 55%;
+            margin-left: 5%;
+            margin-top: 8%;
+            height: 100%;
+
+    }
+    .text4{
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -19%;
+    }
+    .text-in4{
+        width: 80%;
+        h2{
+            padding-bottom: 2%;
+        }
+    }
+    /* sustainable-living */
+    .living{
+        height: 500px;
+        padding-top: 5%;   
+         
+    }
+    .sustainable-living{
+        width: 80%;
+        margin-left: 10%;
+        border: 1px solid black;
+        padding: 2%;
+        padding-top: 4%;
+        border-radius: 2px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
+        h2{
+            padding-bottom: 2%;
+            text-align: center;
+        }
+    }
+    /* green-lifestyle */
+    .green{
+         border-top: 1px solid black;
+         margin-bottom: 17%;
+    }
+    .image4{
+             width: 70%;
+            margin-left: 30%;
+            height: 450px;  
+    }
+    .image-4{
+         background-size: cover;
+            width: 55%;
+            margin-left: 35%;
+            margin-top: 8%;
+            height: 100%;
+    }
+    .lifestyle{
+        width: 80%;
+        margin-left: 5%;
+        margin-top: -19%;
+        .text-lifestyle{
+            width: 50%;
+            h2{
+                padding-bottom: 2%;
+            }
+        }
+    }
+    /* energy-Efficiency */
+    .Efficiency{
+        border-top: 1px solid black; 
+        margin-bottom: 17%;
+    }
+    .image5{
+            width: 70%;
+            height: 450px;  
+    }
+    .image-5{
+            background-size: cover;
+            width: 55%;
+            margin-left: 5%;
+            margin-top: 8%;
+            height: 100%;
+
+    }
+    .Energy-Efficiency{
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -19%;
+    }
+    .text-Energy{
+        width: 80%;
+        h2{
+            padding-bottom: 2%;
+        }
+    }
+    /* green-Homes*/
+    .green-homes{
+         border-top: 1px solid black;
+         margin-bottom: 17%;
+    }
+    .image6{
+             width: 70%;
+            margin-left: 30%;
+            height: 450px;  
+    }
+    .image-6{
+         background-size: cover;
+            width: 55%;
+            margin-left: 35%;
+            margin-top: 8%;
+            height: 100%;
+    }
+    .green-home{
+        width: 80%;
+        margin-left: 5%;
+        margin-top: -19%;
+        .text-home{
+            width: 50%;
+            h2{
+                padding-bottom: 2%;
+            }
+        }
+    }
+    /* Transportation */
+    .Transportation{
+        border-top: 1px solid black; 
+        margin-bottom: 17%;
+    }
+    .image7{
+            width: 70%;
+            height: 450px;  
+    }
+    .image-7{
+            background-size: cover;
+            width: 55%;
+            margin-left: 5%;
+            margin-top: 8%;
+            height: 100%;
+
+    }
+    .Sustainable-Transportation{
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -19%;
+    }
+    .text-Transportation{
+        width: 80%;
+        h2{
+            padding-bottom: 2%;
+        }
+    }
+    /* recycle */
+    .recycling{
+        height: 650px;
+        background-color: rgb(220, 216, 216);
+        
+    }
+    .recycle{
+        width: 80%;
+        margin-left: 10%;
+        h2{
+            text-align: center;
+            padding-top: 5%;
+        }
+    }
+    .imgrecycle{
+        width: 70%;
+        height: 400px; 
+    }
+    .recycle-image{
+        background-size: cover;
+        width: 50%;
+        margin-top: 5%;
+        height: 100%;
+    }
+    .recycle-text{
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -28%;
+    }
+    .button{
+        width: 20%;
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+    /* future */
+    .future{
+        height: 1020px;
+        width: 80%;
+        margin-left: 10%;
+    h2{
+        margin-top: 5%;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    }
+    .image10{
+        margin-top: 5%;
+        margin-left: 35%;
+        width: 50%;
+        height: 400px;
+    }
+    .image10-box{
+        width: 65%;
+        height: 100%;
+        background-size: cover;
+    }
+    /* footer */
+.footer{
+    height: 0px;
+}
+#top{
+    background-color: rgb(63, 155, 63);
+    padding: 1%;
+    height: 45px;
+    margin-bottom: 5%;
+    text-align: center;  
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+     align-items: center; 
+     width: 80%;
+     margin-left: 10%;
+    background-color: rgb(252, 252, 253);
+    margin-bottom: 5%;
+    ul a{
+        display: block;
+        margin-top: 4%;
+        color: black;
+        padding-top:7px ;
+        text-align: center;
+        transition: 0.3s;
+    }
+    p{
+        color: black;
+        text-align: center;
+    }
+}
+  .logo-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 90%;
+        margin-left: 5%;
+        border-top: 1px solid black;
+    }
+    .logo-box{
+        background-image: url(images/logo1.png);
+        background-size: cover;
+        height: 65%;
+        width: 120px;
+    }
+.foot ul a:hover{
+    color:green;
+    transition: 0.3s;   
+}
+ .foot-end{
+        text-align: center;
+        background-color: rgb(8, 95, 8,0.83);
+        color: white;
+        padding: 1%;
+        width: 100%;
+    }
+    @media screen and (max-width: 768px){
+        *{
+            p{
+                font-size: 15px;
+                line-height: 25px;
+                text-align: justify;
+            }
+            h2{
+                font-size: 1.8rem;
+            }
+            h3{
+                 font-size: 1.3rem;
+            }
+            box-sizing: border-box;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+        }
+        .nav-links{
+            position: relative;
+        }
+       .nav-links ul {
+        display: none;
+        position: absolute;
+        border-radius: 10px;
+        top: 35px;
+        right: 0;
+        text-align: center;
+        width: 180px;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+        background: rgb(234, 254, 234);
+        
+    }
+     .nav-links ul.show {
+        display: flex;
+        transition: 1.50s;
+    }
+        /* logo */
+        nav img{
+            width: 100px;
+        }
+        #menuIcon {
+        display: inline-block;
+        font-size: 25px;
+        margin-top: 2.5%;
+        margin-right: 5%;
+        cursor: pointer;
+        color: black;
+    }
+        /* hero-section */
+    .hero-section{
+        height: auto;
+        
+        border-bottom: 1px solid black;
+        
+        .hero-text{
+            width: 90%;
+            margin-top: 1%;
+            h1{
+                font-size: 2rem;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5%;
+            }
+            h2{
+                margin-bottom: 3%;
+                width: 100%;
+                text-align: center;
+            }
+            p{
+                width: 100%;
+                text-align: center;
+                margin-top: 10%;
+            }
+            .text{
+                margin-top: 5%;
+                width: 100%;
+                margin-bottom: 10%;
+            }
+        }
+        .image-box{
+            width: 60%;
+            margin-left: 0%;
+            height: 290px;
+        .image{
+            width: 100%;
+            margin-top: 8%;
+            height: 100%;
+        }
+        } 
+    }
+    /* about sustainable energy */
+    .about{
+        height: auto;
+        width: 100%;
+        background-size: contain;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-bottom: 2%; */
+    }
+    .energy{
+        width: 100%;
+        margin-top: 2%;
+    }
+    .sustainable{
+        h2{
+            text-align: center;
+            margin-bottom: 5%;
+            width: 80%;
+            padding-top: 5%;
+            font-size: 1.8rem;
+        }
+        p{
+            backdrop-filter: blur(5px);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.667);
+            padding: 5%;
+            width: 80%;
+            margin-bottom: 15%;
+            border-radius: 10px;
+        }
+        button{
+            width: 30%;
+            padding: 2%;
+            border-radius: 8px;
+            margin-left: 35%;
+            margin-top: 0%;
+        }
+    }
+        .renew{
+            width: 100%;
+            margin-left: 0%;
+            border: 0px solid black;
+            height:auto;
+            margin-bottom: 15%;
+            h2{
+                margin-top: 5%;
+            }
+            p{
+                width: 95%;
+                margin-left: 2.5%;
+                text-align: justify;
+            }     
+            button{
+            width: 25%;
+            padding: 1%;
+            border-radius: 8px;
+            margin-left: 35%; 
+            margin-bottom: 0%;
+            margin-top: 5%;
+            }       
+        }
+        /* solar-eneegy */
+    .solar-energy{
+         border-top: 1px solid black;
+         height: auto;
+         margin-bottom: 10%;
+    }
+    .img{
+            width: 60%;
+            margin-left: 0%;
+            height: 220px;  
+    }
+    .img1{
+         background-size: cover;
+            width: 100%;
+            margin-left: 35%;
+            margin-top: 8%;
+            height: 100%;
+    }
+    .text1{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 0%;
+        .text-in{
+            width: 100%;
+            h2{
+                padding-bottom: 5%;
+                text-align: center;
+                margin-top: 5%;
+            }
+        }
+    }
+    /* wind */
+    .wind-energy{
+        border-top: 1px solid black; 
+        margin-bottom: 10%;
+    }
+    .img2{
+            width: 60%;
+            margin-left: 0%;
+            height: 220px;   
+    }
+    .img-2{
+            background-size: cover;
+            width: 100%;
+            margin-left: 35%;
+            margin-top: 8%;
+            height: 100%;
+
+    }
+    .text2{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 0%;
+    }
+    .text-in2{
+        width: 100%;
+        h2{
+            padding-bottom: 5%;
+            padding-top: 5%;
+            text-align: center;
+        }
+    }
+    /* hydropower */
+    .hydro{
+         border-top: 0px solid black; 
+         margin-bottom: 10%;
+         height: auto;
+    }
+
+    .img3{
+            width: 71%;
+            margin-left: 0%;
+            height: 300px; 
+
+    }
+    .img-3{
+             background-size: cover;
+            width: 100%;
+            margin-left: 15%;
+            margin-top: 0%;
+            height: 100%;
+    }
+    .text3{
+        width: 100%;
+        margin-left: 2.5%;
+        margin-top: 0%;
+    }
+    .text-in3{
+         width: 100%;
+            h2{
+                padding-bottom: 5%;
+                padding-top: 5%;
+                text-align: center;
+            }
+    }
+    /* Biomass */
+     .biomass{
+        border-top: 1px solid black; 
+        border-bottom: 1px solid black; 
+        padding-bottom: 10%;
+        /* margin-bottom: 17%; */
+    }
+    .img4{
+            width: 71%;
+            margin-left: 0%;
+            height: 300px;   
+    }
+    .img-4{
+            background-size: cover;
+            width: 100%;
+            margin-left: 20%;
+            margin-top: 10%;
+            height: 100%;
+
+    }
+    .text4{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 0%;
+    }
+    .text-in4{
+        width: 100%;
+        h2{
+            padding-bottom: 5%;
+            padding-top: 5%;
+            text-align: center;
+        }
+    }
+    /* sustainable-living */
+    .living{
+        height: auto;
+        padding-top: 10%;
+        margin-bottom: 10%;   
+         
+    }
+    .sustainable-living{
+        width: 100%;
+        margin-left: 0%;
+        border: 0px;
+        padding: 0%;
+        padding-top: 5%;
+
+        h2{
+            padding-bottom: 2%;
+            text-align: center;
+            padding-top: 5%;
+        }
+        p{
+            width: 95%;
+            margin-left: 2.5%;
+            padding-top: 5%;
+            padding-bottom: 0%;
+        }
+         button{
+            width: 25%;
+            padding: 1%;
+            border-radius: 8px;
+            margin-left: 35%;
+            margin-bottom: 5%;
+            margin-top: 10%;
+            }      
+    }
+    /* green-lifestyle */
+    .green{
+         border-top: 1px solid black;
+         margin-bottom: 10%;
+    }
+    .image4{
+             width: 71%;
+            margin-left: 0%;
+            height: 300px;  
+    }
+    .image-4{
+         background-size: cover;
+            width: 100%;
+            margin-left: 20%;
+            margin-top: 10%;
+            height: 100%;
+    }
+    .lifestyle{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+        .text-lifestyle{
+            width: 95%;
+            margin-left: 2.5%;
+            h2{
+                padding-bottom: 2%;
+                text-align: center;
+                margin-top: 5%;
+            }
+        }
+    }
+    /* energy-Efficiency */
+    .Efficiency{
+        border-top: 1px solid black; 
+        margin-bottom: 17%;
+    }
+    .image5{
+            width: 71%;
+            margin-left: 0%;
+            height: 300px; 
+    }
+    .image-5{
+            background-size: cover;
+            width: 100%;
+            margin-left: 20%;
+            margin-top: 10%;
+            height: 100%;
+
+    }
+    .Energy-Efficiency{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 0%;
+    }
+    .text-Energy{
+        width: 100%;
+        h2{
+            padding-bottom: 5%;
+            text-align: center;
+            margin-top: 5%;
+        }
+    }
+    /* green-Homes*/
+    .green-homes{
+         border-top: 1px solid black;
+         margin-bottom: 10%;
+    }
+    .image6{
+             width: 71%;
+            margin-left: 0%;
+            height: 300px;  
+    }
+    .image-6{
+          background-size: cover;
+            width: 100%;
+            margin-left: 20%;
+            margin-top: 10%;
+            height: 100%;
+    }
+    .green-home{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 0%;
+        .text-home{
+            width: 100%;
+            h2{
+                padding-bottom: 2%;
+                text-align: center;
+                margin-bottom: 5%;
+                margin-top: 5%;
+            }
+        }
+    }
+    /* Transportation */
+    .Transportation{
+        border-top: 1px solid black; 
+        margin-bottom: 10%;
+    }
+    .image7{
+            width: 71%;
+            margin-left: 0%;
+            height: 300px;    
+    }
+    .image-7{
+            background-size: cover;
+            width: 100%;
+            margin-left: 20%;
+            margin-top: 10%;
+            height: 100%;
+
+    }
+    .Sustainable-Transportation{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 0%;
+    }
+    .text-Transportation{
+        width: 100%;
+        h2{
+            padding-bottom: 2%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            text-align: center;
+        }
+    }
+    /* recycle */
+    .recycling{
+        height: auto;
+        background-color: rgb(220, 216, 216);
+        
+    }
+    .recycle{
+        width: 80%;
+        margin-left: 10%;
+        h2{
+            text-align: center;
+            padding-top: 5%;
+        }
+    }
+    .imgrecycle{
+        width:79%;
+        margin-left: 0%;
+        height: 250px;   
+    }
+    .recycle-image{
+        background-size: cover;
+        width: 90%;
+        margin-left: 20%;
+        margin-top: 10%;
+        height: 100%;
+
+    }
+    .recycle-text{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 5%;
+    }
+    .button{
+        width: 30%;
+        margin-top: 5%;
+        margin-left: 35%;
+        margin-bottom: 5%;
+    }
+    /* future */
+    .future{
+        height: auto;
+        width: 80%;
+        margin-left: 10%;
+    h2{
+        margin-top: 15%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    h3{
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 10%;
+    }
+    }
+    .image10{
+        width: 85%;
+        margin-left: 0%;
+        height: 270px;
+    }
+    .image10-box{
+        background-size: cover;
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 10%;
+        height: 100%;
+    }
+    #text1{
+        margin-top: 5%;
+    }
+    p{
+        margin-bottom: 15%;
+    }
+    /* footer */
+    #top{
+        padding: 2%;
+        height: auto;
+    }
+.foot{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    ul a{
+        font-size: 0.85rem;
+        margin-top: 0%;
+    }
+    p{
+        color: black;
+        text-align: center;
+        margin-top: 15%;
+    }
+}
+
+ .foot-end{
+
+        padding: 1%;
+        width: 100%;
+        font-family: "Offside", sans-serif;
+        font-weight: 100;
+        text-align: center;
+        font-style: normal;
+    }
+              
+
+        
     }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable-Energy</title>
+    <link rel="stylesheet" href="sustainable.css">
+</head>
+<body>
+    <header>
+        <nav>
+       <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navigation">
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+             <ul>   
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="sustainablelive.html">SUSTAINABLE-LIVING</a></li>
+                        <li><a href="renew.html">RENEWABLE-ENERGY</a></li>
+                        <li><a href="recycle.html">RECYCLING</a></li>
+                    </ul>
+        </div> 
+    </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero-div">
+            <h1><b>Sustainable energy</b></h1>
+            <div class="hero-text">
+                <h2>Sustainable energy</h2>
+                <p>Sustainable Energy refers to energy solutions that simultaneously address development issues related to economic growth, environment and social equity. Per the UNDP Energy Strategy, UNDP’s work on sustainable energy is aligned with the Sustainable Development Goal 7 (SDG7) on “ensuring access to affordable, reliable, modern, and sustainable energy” and is structured around three action areas – energy access, energy efficiency and renewable energy.<br><br>
+
+                <b>Energy Access:</b> The focus of the work is on increasing access to affordable, reliable and sustainable energy (electrical, thermal and mechanical) needs of households, businesses and communities. The projects that are developed includes decentralized RE-based energy generation for power and non-power applications, as well as electricity supply and distribution through mini/micro-grid systems. <br><br>
+
+                <b>Energy Efficiency:</b> The work focuses on assisting developing countries in improving the energy utilization efficiency of developing countries through the promotion of the application of energy efficiency technologies, techniques and practices across energy-consuming sectors of national economies, creating strong market demand and incentives for public and private investment in energy efficiency through a combination of policy, financial de-risking and direct incentives.<br><br>
+
+                <b>Renewable Energy:</b> Increasing the share of renewable energy in the energy mix of developing countries is the focus of UNDP’s work on renewable energy. The work involves the development and implementation of projects that facilitates the applications of cost-effective on- and off-grid renewable energy production, storage and supply technologies.</p>                
+            </div>
+            <div class="image">
+                <div class="image-box" style="background-image: url(https://i.pinimg.com/736x/7b/4e/0d/7b4e0d403210db6043f5349bd730a5b3.jpg);"></div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">     
+    <footer>
+      <div class="foot">
+        <ul>
+            <p>Ouick links</p>
+            <a href="#Top">Home</a>
+            <a href="renew.html">Renewable-Energy</a>
+            <a href="sustainablelive.html">Sustainable-living</a>
+            <a href="recycle.html">Recycling</a>
+        </ul>
+        <ul>
+                <p>Follow Us</p>
+                <a><i class="fa-brands fa-square-facebook"></i>:@GreenEnergyOfficial</a>
+                <a><i class="fa-brands fa-square-instagram"></i>:@Greenenergy</a>
+                <a><i class="fa-brands fa-square-pinterest"></i>:@Greenenergy</a>
+                <a><i class="fa-brands fa-square-twitter"></i>:@Greenenergy</a>
+            </ul>
+        </div> 
+        <div class="logo-img">
+            <div class="logo-box" style="background-image: url(images/logo.png);"></div>
+        </div>
+         <div class="foot-end">
+            <h5>© 2026 Green-Energy . All Rights Reserved. | Green-Energy Clean Energy 💚♻️</h5>
+        </div>
+      
+    </footer>
+    </section>
+    <script>
+        let menuIcon = document.getElementById("menuIcon");
+        let menu = document.querySelector(".nav-links ul");
+
+        menuIcon.onclick = function() {
+        menu.classList.toggle("show");
+
+
+
+         if (menu.classList.contains("show")) {
+            menuIcon.classList.remove("fa-bars");
+            menuIcon.classList.add("fa-xmark");
+            } 
+        else {
+            menuIcon.classList.remove("fa-xmark");
+            menuIcon.classList.add("fa-bars");
+            }
+};
+</script>
+</body>
+</html>
